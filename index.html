@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Poopcoin</title>
+</head>
+<script type="text/javascript">
+    var clicks = 0; // change int to var here
+    function countClicks() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+</script>
+<body>
+    <input type="image" class="coin" src="poopcoin.png" onClick="countClicks()" alt="Кнопка «input»">
+   
+    <p class="click"><a id="clicks" class="clicks">0</a></p>
+
+
+    <div class="svet"></div>
+
+
+</body>
+</html>
