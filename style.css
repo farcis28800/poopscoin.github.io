@@ -83,18 +83,16 @@ a{
         display: block;
         width: 350px;
         height: 350px;
-        transition: 0.2s all; 
         box-shadow:none;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         border-radius: 100%;
-        
-    }
-    .coin:active{
-        transform: scale(0.98); 
-        /* Scaling button to 0.98 to its original size */ 
-        box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
-        /* Lowering the shadow */ 
-    }
+        transition: all .2s ease-in-out;
+}
+
+.сoin:active {
+	transform: scale(1.1);
+	transition: .1s;
+}
     input:focus {
         outline:none;
     }
