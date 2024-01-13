@@ -1,19 +1,76 @@
 body {
     background-color: #2d3436;
+    -ms-user-select: none; 
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    user-select: none; 
 
 }
+.svet{
+    width: 80%;
+max-width: 550px;
+position: relative;
+box-shadow: 20px -15px 300px 160px rgb(212, 189, 58);
+position: absolute;
+top: 860px;
+right: 10px;
+}
+
+.coin{
+    position: relative;
+    margin: 0 auto;
+    top: 350px;
+    display: block;
+    width: 350px;
+    height: 350px;
+    transition: 0.2s all; 
+    box-shadow:none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    border-radius: 100%;
+    
+}
+.coin:active{
+    transform: scale(0.98); 
+    /* Scaling button to 0.98 to its original size */ 
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+    /* Lowering the shadow */ 
+}
+input:focus {
+    outline:none;
+}
+
+a{
+    color: aliceblue;
+    position: relative;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+}
+
+.click{
+    position: relative;
+    text-align: center;
+    top: -290px;
+    font-size: 70px;
+    font-family: Blippo, fantasy;
+}
+
+
+
 
 @media screen and (max-device-width:480px){
     
     body {
         background-color: #141414;
-        
+        -ms-user-select: none; 
+		-moz-user-select: none; 
+		-webkit-user-select: none; 
+		user-select: none; 
     }
     
     .svet{
         width: 80%;
   max-width: 550px;
-  
   box-shadow: 20px -15px 300px 160px rgb(212, 189, 58);
   position: absolute;
   top: 860px;
